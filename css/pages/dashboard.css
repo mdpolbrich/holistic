@@ -31,14 +31,20 @@
   font-size: 14px;
 }
 
+.asset-performance-negative {
+  background-color: #FBEFF2;
+  padding: 0px 8px;
+  border-radius: 11px;
+  color: #C8395A;
+  font-size: 14px;
+}
+
 .dashboard-header-phone-menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  /* border-bottom: 1px solid #F2F2F7;
-  border-radius: 10px 10px 0px 0px; */
 }
 
 .dashboard-header-phone-menu p {
