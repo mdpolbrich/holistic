@@ -32,3 +32,36 @@
   font-weight: 400;
   font-family: 'Avenir';
 }
+
+.btn-add-asset {
+  background-color: #00C4FB;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  font-size: 16px;
+}
+
+.btn-account{
+  background-color: #012A8A;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  font-size: 16px;
+}
+
+.btn-menu{
+  background-color: #F2F2F7;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: black;
+  width: 40px;
+  font-size: 20px;
+}

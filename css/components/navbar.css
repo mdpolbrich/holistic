@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  flex-wrap: wrap;
 }
 
 .navbar img {
@@ -15,13 +16,14 @@
 }
 
 form.navbar-search {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   position: relative;
+  flex-wrap: wrap;
 }
 
-form.navbar-search i{
+form.navbar-search i {
   position: absolute;
   left: 10px;
   font-weight: 55 0;
@@ -31,6 +33,7 @@ form.navbar-search i{
 
 form.navbar-search input[type=text] {
   float: right;
+  width: 300px;
   padding: 0px 36px;
   font-family: 'Avenir';
   font-style: normal;
@@ -46,26 +49,30 @@ form.navbar-search input[type=text] {
 
 .navbar-search-time {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   list-style: none;
   background-color: #012A8A;
   border-radius: 20px;
   color: #FFFFFF;
   border: none;
-  position: absolute;
-  right: -20px;
-  padding: 0px 10px;
   height: 40px;
+  padding: 0px 20px;
 }
 
 .navbar-search-time li {
   font-weight: 400;
   font-size: 14px;
-  padding: 8px 10px;
+  padding: 10px;
+}
+
+.search-bar-phone {
+  padding: 15px 15px 0;
 }
 
 .navbar-actions {
-  display: flex;
+  display: none;
   flex-grow: 0.5;
   flex-direction: row;
   justify-content: space-around;
@@ -74,6 +81,7 @@ form.navbar-search input[type=text] {
 
 .navbar-action-block {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -81,16 +89,55 @@ form.navbar-search input[type=text] {
   color: #AEAEB2;
 }
 
+.navbar-actions-tablet {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-grow: 0.1;
+}
+
+/* Small devices (tablets vertical, 744px and up) */
+@media (min-width: 744px) {
+  form.navbar-search {
+    display: flex;
+  }
+  .search-bar-phone {
+    display: none;
+  }
+  .navbar-search-time {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 1024px and up) */
+@media (min-width: 1024px) {
+  .navbar-search input[type=text] {
+   width: 500px!important;
+  }
+  .navbar-search-time {
+    display: flex;
+    position: absolute;
+    right: -20px;
+  }
+}
+
 /* Large devices (desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .navbar-search input[type=text]{
-   width: 600px;
+  .navbar-actions-tablet {
+  display: none;
+  }
+  .navbar-actions {
+    display: flex;
   }
 }
 
 /* Extra large devices (large desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  .navbar-search input[type=text]{
-    width: 720px;
+  .navbar-search input[type=text] {
+    width: 650px!important;
    }
+  .navbar-actions-tablet {
+  display: none;
+  }
 }

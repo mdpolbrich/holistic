@@ -16,15 +16,20 @@
       <form class="navbar-search" action="">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" placeholder="Suchen">
-        <button class="navbar-search-time">
+        <ul class="navbar-search-time">
             <li>1D</li>
             <li>1W</li>
             <li>1M</li>
             <li>1Y</li>
             <li>YTD</li>
             <li>MAX</li>
-        </button>
+        </ul>
       </form>
+      <div class="navbar-actions-tablet">
+        <button class="btn-menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        <button class="btn-add-asset"><i class="fa-solid fa-plus"></i></button>
+        <button class="btn-account"><i class="fa-solid fa-user"></i></button>
+      </div>
       <div class="navbar-actions">
         <div class="navbar-action-block">
           <i class="fa-brands fa-youtube"></i>
@@ -41,7 +46,52 @@
       </div>
     </div>
   </div>
+  <!-- Phone version -->
+  <div class="search-bar-phone">
+    <ul class="navbar-search-time">
+      <li>1D</li>
+      <li>1W</li>
+      <li>1M</li>
+      <li>1Y</li>
+      <li>YTD</li>
+      <li>MAX</li>
+    </ul>
+  </div>
   <div class="dashboard">
+    <!-- Phone version -->
+    <div class="dashboard-header-phone container">
+      <div class="dashboard-header-path-detail">
+        <i class="fa-solid fa-chevron-left"></i>
+        <p>Dividendenportfolio</p>
+      </div>
+      <div class="dashboard-header-main-title">
+        <img src="images/image 5.png" alt="">
+        <div>
+          <div class="dashboard-header-main-title-details">
+            <p>Aktie</p>
+            <p>·</p>
+            <p>US8552441094&nbsp;<i class="fa-regular fa-paste"></i></p>
+            <p>·</p>
+            <p>884437&nbsp;<i class="fa-regular fa-paste"></i></p>
+          </div>
+          <h2>Starbucks</h2>
+        </div>
+      </div>
+      <div>
+        <div class="dashboard-header-phone-summary">
+          <p>Marktwert</p>
+          <p class="asset-performance"><i class="fa-solid fa-caret-up"></i>&nbsp;8,83%</p>
+        </div>
+        <h1>1.636,66 €</h1>
+      </div>
+      <div class="dashboard-header-phone-menu">
+        <p class="dashboard-header-phone-menu-active">Meine Übersicht</p>
+        <p>Kursdaten</p>
+        <p>Dividenden</p>
+      </div>
+    </div>
+
+    <!-- Desktop version -->
     <div class="dashboard-header container-dashboard">
       <div class="dashboard-header-path">
         <div class="dashboard-header-path-detail">
@@ -72,6 +122,34 @@
     </div>
   </div>
   <div class="dashboard-overview">
+  <!-- Phone version -->
+  <div class="dashboard-overview-phone">
+    <div class="dashboard-overview-phone-content"></div>
+    <div class="dashboard-overview-phone-footer">
+      <div>
+        <img src="images/Overview.png" alt="">
+        <p>Übersicht</p>
+      </div>
+      <div>
+        <img src="images/Wertpapie.png" alt="">
+        <p>Wertpapiere</p>
+      </div>
+      <div>
+        <img src="images/Immobilie.png" alt="">
+        <p>Immobilien</p>
+      </div>
+      <div>
+        <img src="images/Cash.png" alt="">
+        <p>Cash</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-ellipsis"></i>
+        <p>Weitere</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Desktop version -->
     <div class="dashboard-overview-grid container-dashboard">
       <div></div>
       <div></div>
@@ -101,7 +179,7 @@
         <img src="images/Menüpunkt-4.png" alt="">
       </li>
       <li>
-        <img src="images/Add-Asset-Button.png" alt="">
+        <button class="btn-add-asset"><i class="fa-solid fa-plus"></i></button>
       </li>
     </ul>
     <div class="personal-area">

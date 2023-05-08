@@ -2,7 +2,7 @@
 @import url(components/container.css);
 @import url(components/button.css);
 @import url(pages/dashboard.css);
-@import url(pages/navigation.css);
+@import url(components/navigation.css);
 @import url('https://fonts.cdnfonts.com/css/avenir');
 
 
