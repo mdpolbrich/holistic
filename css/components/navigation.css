@@ -33,6 +33,19 @@
   box-sizing: border-box;
 }
 
+.personal-area-toggle {
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid rgba(1, 42, 138, 0.03);
+  width: 300px;
+  height: 607px;
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: -30px;
+  right: 35px;
+}
+
 .personal-area-contact i {
   font-size: 20px;
 }

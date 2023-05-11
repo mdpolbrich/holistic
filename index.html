@@ -28,7 +28,7 @@
       <div class="navbar-actions-tablet">
         <button class="btn-menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
         <button class="btn-add-asset"><i class="fa-solid fa-plus"></i></button>
-        <button class="btn-account"><i class="fa-solid fa-user"></i></button>
+        <button class="btn-account" onclick="changeClass()"><i class="fa-solid fa-user"></i></button>
       </div>
       <div class="navbar-actions">
         <div class="navbar-action-block">
@@ -182,7 +182,7 @@
         <button class="btn-add-asset"><i class="fa-solid fa-plus"></i></button>
       </li>
     </ul>
-    <div class="personal-area">
+    <div class="personal-area" id="personal-area">
         <div class="personal-area-contact">
           <div class="personal-area-contact-block">
             <img src="images/Avatar.png" alt="">
@@ -263,6 +263,11 @@
         </div>
       </div>
   </div>
-
+  <script>
+    function changeClass() {
+      let personalArea = document.getElementById("personal-area");
+      personalArea.classList.toggle('personal-area-toggle');
+    }
+  </script>
 </body>
 </html>
